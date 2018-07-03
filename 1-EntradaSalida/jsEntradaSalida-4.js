@@ -4,6 +4,11 @@
 */
 function mostrar()
 {
-	
+	var nombre;
+	nombre = prompt("Ingrese su nombre");
+	document.getElementById('elNombre').value=nombre;
+
+	//Uso la ventana que ve el usuario para mostrar su nombre
+	//Interactuo con el usuario para no usar alert
 }
 
