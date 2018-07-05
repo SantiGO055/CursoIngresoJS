@@ -14,12 +14,12 @@ function mostrar()
 		mayor=numero1-numero2;
 		alert(mayor);
 		}
-		else {
+			else {
 			suma=numero1+numero2;
 			alert(suma);
-			if (suma>10) {
-				
-			}
+				if (suma>10) {
+				alert("La suma es "+suma+" y supero el 10");
+				}
 		}
 
 }
