@@ -1,13 +1,16 @@
 
 function mostrar()
 {
-	var base, altura, perimetro, superficie;
+	var base, altura, perimetro, area;
 	base=prompt("Ingrese la base de un triangulo");
 	altura=prompt("Ingrese la altura de un triangulo");
+	base=parseInt(base);
+	altura=parseInt(altura);
 	
-	superficie=(base*altura)/2;
+	area=(base*altura)/2;
 	perimetro=(base*base)+(altura*altura);
 	perimetro=Math.sqrt(perimetro);
-	alert("La superficie del triangulo es :"+superficie+" y el perimetro del triangulo es"+perimetro);
+	perimetro=parseFloat(perimetro);
+	alert("La superficie del triangulo es "+area+" y el perimetro del triangulo es "+perimetro);
 	
 }
