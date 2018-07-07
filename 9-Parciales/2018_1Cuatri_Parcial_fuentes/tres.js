@@ -6,6 +6,6 @@ function mostrar()
 	precio=parseInt(precio);
 	descuento=parseInt(descuento);
 	preciofinal=(precio*descuento)/100;
-	preciofinal=(precio+preciofinal);
+	preciofinal=(precio-preciofinal);
 	document.getElementById('elPrecioFinal').value=preciofinal;
 }
