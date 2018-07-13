@@ -67,6 +67,10 @@ function CalcularPrecio ()
 	}
 
 	preciodescuentofinal=document.getElementById('precioDescuento').value;
-	if (true) {}
+	if (preciodescuentofinal>=120) {
+		ingresobruto=(ingresobruto*0.10);
+		preciodescuentofinal=preciodescuentofinal+ingresobruto;
+		alert("IIBB Usted pago ”+ preciodescuentofinal"+", siendo"+ingresobruto+" el impuesto que se pagó");
+	}
 
 }
