@@ -1,0 +1,16 @@
+Condicion if:
+igualdad estricta ===
+
+Compara el tipo de valor, si el tipo de valor es igual compara el valor, si es igual es true:
+2==="2"
+
+Compara valores:
+2=="2"
+true=="true"
+
+Operadores lógicos:
+and=&&
+or=||
+
+Si se pone if y else sin llave interpreta el else solamente
+
