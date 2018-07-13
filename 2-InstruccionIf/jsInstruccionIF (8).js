@@ -1,4 +1,4 @@
-function mostrar()
+lfunction mostrar()
 {
 //tomo la edad  
 var edad, estadocivil;
