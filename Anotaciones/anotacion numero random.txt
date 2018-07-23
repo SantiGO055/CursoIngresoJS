@@ -1,4 +1,6 @@
+//[min,max)
+
 var num;
 num=Math.floor(Math.random() * (max-min)) + min;
 
-*10 significa multiplicar por el (numero maximo + el minimo), indica el numero hasta el que se quiere obtener . El +1 le suma el minimo para que arranque desde 1
+//*10 significa multiplicar por el (numero maximo + el minimo), indica el numero hasta el que se quiere obtener . El +1 le suma el minimo para que arranque desde 1
