@@ -8,13 +8,22 @@ var eleccionMaquina;
 
 function comenzar()
 {
-	
+	var eleccionMaquina;
+	eleccionMaquina=Math.floor(Math.random() * 3) + 1;
 
 
 }//FIN DE LA FUNCIÓN
 function piedra()
 {
-	
+	var piedra=1;
+	var papel=2;
+	var tijera=3;
+	if (eleccionMaquina==piedra){
+		alert("Empató");
+	}
+	else if(eleccionMaquina==papel){
+		
+	}
 
 }//FIN DE LA FUNCIÓN
 function papel()
