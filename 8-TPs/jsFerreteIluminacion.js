@@ -14,7 +14,76 @@ function CalcularPrecio ()
 	marca=document.getElementById('Marca').value;
 	cantidad=document.getElementById('Cantidad').value;
 	precio=(cantidad*35);
-	/*Punto A*/
+	cantidad=parseInt(cantidad);
+
+										//Ejercicio hecho con switch
+	switch(cantidad)
+	{
+		case 1:
+		case 2:
+			break;
+		case 3:
+				switch(marca){
+					case 'ArgentinaLuz':
+						descuento=precio*0.15;
+						descuento=precio-descuento;
+						break;
+					case 'FelipeLamparas':
+						descuento=precio*0.10;
+						descuento=precio-descuento;
+						break;
+					default:
+						descuento=precio*0.05;
+						descuento=precio-descuento;
+
+						}
+			break;
+		case 4:
+				switch(marca){
+					case 'ArgentinaLuz':
+					case 'FelipeLamparas':
+						descuento=precio*0.25;
+						descuento=precio-descuento;
+						break;
+					default:
+						descuento=precio*0.20;
+						descuento=precio-descuento;
+
+					}
+			break;
+		case 5:
+				switch(marca){
+					case 'ArgentinaLuz':
+						descuento=precio*0.40;
+						descuento=precio-descuento;
+						break;
+					default:
+						descuento=precio*0.30;
+						descuento=precio-descuento;
+
+					}
+			break;
+		default:
+			descuento=precio*0.50;
+			descuento=precio-descuento;
+
+	}
+
+	document.getElementById('precioDescuento').value=descuento;
+
+	if (descuento>=120) {
+		ingresobruto=(descuento*0.10);
+		descuento=descuento+ingresobruto;
+		alert("IIBB Usted pago "+ descuento + ", siendo "+ingresobruto+ " el impuesto que se pagó");
+	}
+
+
+
+
+
+										//Ejercicio hecho con if
+/*
+	//Punto A
 
 	if (cantidad>=6) {
 		descuento=precio*0.50;
@@ -22,7 +91,7 @@ function CalcularPrecio ()
 		document.getElementById('precioDescuento').value=descuento;
 	}
 
-	/*Punto B*/
+	//Punto B
 	else if (cantidad==5 && marca=='ArgentinaLuz') {
 		descuento=(precio*0.40);
 		descuento=precio-descuento;
@@ -34,7 +103,7 @@ function CalcularPrecio ()
 		document.getElementById('precioDescuento').value=descuento;
 		}
 	
-	/*Punto C*/
+	//Punto C
 	else if (cantidad==4 && (marca=='ArgentinaLuz' || marca=='FelipeLamparas')) {
 		descuento=(precio*0.25);
 		descuento=precio-descuento;
@@ -46,7 +115,7 @@ function CalcularPrecio ()
 		document.getElementById('precioDescuento').value=descuento;
 		}
 	
-	/*Punto D*/
+	//Punto D
 	else if (cantidad==3 && marca=='ArgentinaLuz') {
 		descuento=(precio*0.15);
 		descuento=precio-descuento;
@@ -74,5 +143,5 @@ function CalcularPrecio ()
 		descuento=descuento+ingresobruto;
 		alert("IIBB Usted pago "+ descuento + ", siendo "+ingresobruto+ " el impuesto que se pagó");
 	}
-
+*/
 }
