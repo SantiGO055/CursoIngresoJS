@@ -5,14 +5,13 @@ function mostrar()
 	var acumulador=0;
 	var respuesta='si';
 	var numero;
-	numero=prompt('Ingrese numeros, para cortar escriba si');
-	while(numero>0 && numero!='si')
+	
+	while(respuesta!='no')
 	{
-
-		
+		numero=prompt('Ingrese numeros');
 		numero=parseInt(numero);
 		acumulador=numero+acumulador;
-		numero=prompt('Ingrese numeros, para cortar escriba si');
+		respuesta=prompt('¿Quiere continuar? Si o No');
 		contador++;
 	}
 
