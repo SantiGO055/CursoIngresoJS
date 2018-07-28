@@ -5,9 +5,10 @@ function mostrar()
 	var positivo=0;
 	var negativo=1;
 	var numero;
-	numero=prompt('Ingrese numeros, para cortar escriba si');
-	while(numero>0 ||numero<0 && (numero!='si'))
+	respuesta='si';
+	while(respuesta!='no')
 	{
+		numero=prompt('Ingrese numeros');
 		numero=parseInt(numero);
 		if (numero>0){
 			positivo=numero+positivo;
@@ -17,7 +18,7 @@ function mostrar()
 		}
 
 
-		numero=prompt('Ingrese numeros, para cortar escriba si');
+		respuesta=prompt('¿Quiere continuar? Si o No');
 		contador++;
 	}
 document.getElementById('suma').value=positivo;
