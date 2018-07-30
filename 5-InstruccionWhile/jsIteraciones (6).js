@@ -9,6 +9,13 @@ function mostrar()
 
 		numero=prompt('Ingrese un numero');
 		numero=parseInt(numero);
+		//Si el usuario ingresa una letra:
+		/*while(isnan(num)){
+			numero=prompt('Ingrese un numero');
+			numero=parseInt(numero);
+		}*/
+
+
 		acumulador=numero+acumulador;
 		contador++;
 	}
