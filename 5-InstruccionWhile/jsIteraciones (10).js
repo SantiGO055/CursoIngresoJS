@@ -1,6 +1,5 @@
 function mostrar()
 {
-
 	var contador=0;
 	//declarar contadores y variables 
 	var negativos=0;
@@ -42,15 +41,12 @@ function mostrar()
 		else{
 			impares++;
 		}
-
 		respuesta=prompt('¿Quiere continuar? Si o No');
 		contador++;
 	}
 	if (cantpositivos>cantnegativos){
 		diferencia=cantpositivos-cantnegativos;
-
 	}
-
 	document.write("La suma de los positivos es "+positivos+"<br>");
 	document.write("La suma de los negativos es "+negativos+"<br>");
 	document.write("La cantidad de positivos es de "+cantpositivos+"<br>");
