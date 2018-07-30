@@ -10,7 +10,7 @@ function mostrar()
 		numero=prompt('Ingrese un numero');
 		numero=parseInt(numero);
 		//Si el usuario ingresa una letra:
-		/*while(isnan(num)){
+		/*while(isNaN(num)){
 			numero=prompt('Ingrese un numero');
 			numero=parseInt(numero);
 		}*/
