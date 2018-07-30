@@ -43,22 +43,21 @@ function mostrar()
 			impares++;
 		}
 
-
 		respuesta=prompt('¿Quiere continuar?');
 		contador++;
 	}
-	alert("La suma de los positivos es "+positivos);
-	alert("La suma de los negativos es "+negativos);
-	alert("La cantidad de positivos es de "+cantpositivos);
-	alert("La cantidad de negativos es de "+cantnegativos);
-	alert("La cantidad de ceros es de "+cantceros);
+	document.write("La suma de los positivos es "+positivos+"<br>");
+	document.write("La suma de los negativos es "+negativos+"<br>");
+	document.write("La cantidad de positivos es de "+cantpositivos+"<br>");
+	document.write("La cantidad de negativos es de "+cantnegativos+"<br>");
+	document.write("La cantidad de ceros es de "+cantceros+"<br>");
 	//punto 7
-	alert("El promedio de los positivos es "+positivos/cantpositivos);
+	document.write("El promedio de los positivos es "+positivos/cantpositivos+"<br>");
 	//punto 8
-	alert("El promedio de los positivos es "+negativos/cantnegativos);
+	document.write("El promedio de los positivos es "+negativos/cantnegativos+"<br>");
 	//punto 9
 	diferencia=positivos-negativos;
-	alert("La diferencia entre positivos y negativos es "+diferencia);
+	document.write("La diferencia entre positivos y negativos es "+diferencia+"<br>");
 
 
 }//FIN DE LA FUNCIÓN
