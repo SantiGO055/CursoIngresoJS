@@ -19,15 +19,19 @@ function mostrar()
 	{
 		numero=prompt('Ingrese un numero');
 		numero=parseInt(numero);
-		//punto 1, 2, 3, 4 y 5
+		//punto 2
 		if (numero>0){
 			positivos=numero+positivos;
+			//punto 3
 			cantpositivos++;
 		}
+		//punto 1
 		else if (numero<0) {
 			negativos=numero+negativos;
+			//punto 4
 			cantnegativos++;
 		}
+		//punto 5
 		else {
 			cantceros++;
 		}
