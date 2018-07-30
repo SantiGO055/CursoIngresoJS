@@ -43,7 +43,7 @@ function mostrar()
 			impares++;
 		}
 
-		respuesta=prompt('¿Quiere continuar?');
+		respuesta=prompt('¿Quiere continuar? Si o No');
 		contador++;
 	}
 	document.write("La suma de los positivos es "+positivos+"<br>");
