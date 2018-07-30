@@ -46,6 +46,11 @@ function mostrar()
 		respuesta=prompt('¿Quiere continuar? Si o No');
 		contador++;
 	}
+	if (cantpositivos>cantnegativos){
+		diferencia=cantpositivos-cantnegativos;
+
+	}
+
 	document.write("La suma de los positivos es "+positivos+"<br>");
 	document.write("La suma de los negativos es "+negativos+"<br>");
 	document.write("La cantidad de positivos es de "+cantpositivos+"<br>");
@@ -56,8 +61,7 @@ function mostrar()
 	//punto 8
 	document.write("El promedio de los positivos es "+negativos/cantnegativos+"<br>");
 	//punto 9
-	diferencia=positivos-negativos;
-	document.write("La diferencia entre positivos y negativos es "+diferencia+"<br>");
+	document.write("Hay "+diferencia+" mas positivos que negativos"+"<br>");
 
 
 }//FIN DE LA FUNCIÓN
