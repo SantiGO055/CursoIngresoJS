@@ -1,9 +1,9 @@
 function mostrar()
 {
 
-var repeticiones = prompt("ingrese el número de repeticiones");
-var i=0
-	for (i; i <repeticiones; i++) {
+var repeticiones = prompt("Ingrese el número de repeticiones");
+var contador=0
+	for (contador; contador <repeticiones; contador++) {
 
 		console.log("Hola UTN FRA");
 	}

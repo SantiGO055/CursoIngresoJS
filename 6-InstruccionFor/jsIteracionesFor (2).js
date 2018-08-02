@@ -1,9 +1,9 @@
 function mostrar()
 {
-	var i=1;
-	for (i; i <= 10; i++) {
+	var contador=1;
+	for (contador; contador <= 10; contador++) {
 
-		console.log(11-i);
+		console.log(11-contador);
 	}
 
 }
