@@ -5,7 +5,7 @@ function mostrar()
 	var numero;
 	var acumuladorPares=0;
 	numero=prompt("Ingrese un numero");
-	for (contador=1; contador<numero;contador++) {
+	for (contador=1; contador<=numero;contador++) {
 		
 		
 		if (contador%2==0) {
