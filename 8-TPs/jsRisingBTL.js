@@ -9,5 +9,34 @@ F.	Nacionalidad, “A” para argentinos, “E” para extranjeros, “N” para
  */
 function ComenzarIngreso () 
 {
- 
+ 	var edad;
+ 	var sexo;
+ 	var estadoCivil;
+ 	var sueldoBruto;
+ 	var legajo;
+ 	var nacionalidad;
+
+ 	edad=prompt("Ingrese edad");
+ 	edad=parseInt(edad);
+ 	while (isNan(edad) || edad<18 || edad>90){
+ 		edad=prompt("Ingrese edad");
+ 		edad=parseInt(edad);
+ 	}
+ 	sexo=prompt("Ingrese sexo. M o F");
+ 	while (sexo!='M' && sexo!='F'){
+ 		sexo=prompt("Ingrese sexo. M o F");;
+ 	}
+ 	estadoCivil=prompt("Ingrese estado civil. 1-para soltero, 2-para casados, 3-para divorciados y 4-para viudos");
+ 	estadoCivil=parseInt(estadoCivil);
+ 	while (){
+ 		estadoCivil=prompt("Ingrese estado civil. 1-para soltero, 2-para casados, 3-para divorciados y 4-para viudos");
+ 		estadoCivil=parseInt(estadoCivil);
+ 	}
+ 	
+ 	
+
+ 	estadoCivil=prompt("Ingrese estado civil, 1-para soltero, 2-para casados, 3-para divorciados y 4-para viudos");
+ 	sueldoBruto=prompt("Ingrese edad entre 18 y 90 años inclusive");
+ 	legajo=prompt("Ingrese edad entre 18 y 90 años inclusive");
+ 	nacionalidad=prompt("Ingrese edad entre 18 y 90 años inclusive");
 }
